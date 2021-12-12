@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.section {
+    height: 100vh;
+}
+
+.header {
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    background-color: rgba(25, 74, 115, 0.8);
+    opacity: 0;
+}
+
+.header:hover {
+    opacity: 1;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+}
+
+.nav__item {
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    background-image: url(img/rabstol_net_new_year_139.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Marck Script', cursive;
+
+}
+
+.main::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(64, 224, 208, 0.2);
+    display: none;
+}
+
+.about {
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    z-index: 100;
+}
+
+.avatar {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    margin-right: 20px;
+}
+
+.avatar:hover {
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}
+
+.avatar__img {
+    height: 100%;
+}
+
+.info {
+    background-color: #194a73;
+    width: 50%;
+    opacity: 90%;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 20px;
+    border: 5px solid white;
+}
+
+.info__title {
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+.info__text {
+    font-size: 20px;
+}
+
+.button {
+    padding: 15px;
+    position: relative;
+    z-index: 100;
+    background-color: #d42726;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.felicitation {
+    width: 100%;
+    display: flex;
+    background-image: url(img/Noviy-God-2048x1152.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.felicitation__column {
+    width: 50%;
+}
+
+.felicitation__content {
+    padding: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.felicitation__poem {
+    font-size: 20px;
+}
+
+.felicitation__text-img {
+    height: 40%;
+    position: relative;
+}
+
+.felicitation__text-pic {
+    height: 100%;
+}
+
+.felicitation__text-img-talk {
+    position: absolute;
+    top: 50%;
+    left: -15%;
+}
+
+.poem {
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/Christmas-Present-JAyJ-2048x1152-MM-100.jpg);
+}
+
+.poem__title {
+    color: #000000;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.poem__list {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.poem__item {
+    width: 300px;
+    min-height: 580px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-right: 30px;
+    background-color: #f5f5dc;
+}
+
+.poem__item:last-child {
+    margin-right: 0;
+}
+
+.poem__item:hover {
+    border-color: #074607;
+}
+
+.poem__img {
+    width: 100%;
+    height: 300px;
+}
+
+.poem__img-elem {
+    height: 100%;
+}
+
+.poem__subtitle {}
+
+.poem__text {}
